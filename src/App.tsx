@@ -26,7 +26,7 @@ const fetchRestaurants = resource(
   async function fetchRestaurants():Promise<{name:string, mapurl:string, lat:number, lng:number}[]> {
     // const recordPattern = /<section class="c-mapstack__card.+?<span class="c-mapstack__card-index">.+?<\/span>(?<name>.+?)<\/h1>.+?<li><a href="(?<mapurl>https:\/\/www.google.com\/maps\/search\/.+?\/(?<lat>[0-9-.]+?),(?<lng>[0-9-.]+?))"/gis
     // const url = "https://www.eater.com/maps/best-new-restaurants-toronto-heatmap"
-    // // https://159.203.25.161:8080/${url}
+    // // http://159.203.25.161:8080/${url}
     // const text = await (await fetch(`https://cors-anywhere.herokuapp.com/${url}`, {
     //   "headers": {
     //     "accept": "*/*",
